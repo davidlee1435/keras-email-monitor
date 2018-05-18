@@ -1,10 +1,28 @@
 # Keras EmailMonitor
-**Note: this is still a WIP**
+**Note: this is still a WIP. If you would like to use this, please raise an issue**
 
 Sends an email with stats at the end of every epoch.
 
 ![alt text](./img/screenshot.png)
 
+
+#### Usage:
+```
+from monitor import EmailMonitor
+...
+email_monitor = EmailMonitor(<your email address here>)
+model.fit(...
+          callbacks=[email_monitor])
+```
+
+#### Custom Sender Address:
+Currently, the repository uses a dummy Gmail address with Gmail's security settings turned off. If you would like to use this email address as well, please raise an issue requesting access. If not, make sure that you have a `secrets.yaml` file in the root directory with the following structure:
+
+```
+sender:
+    email_address: <your sender email address>
+    password: <your sender password>
+```
 
 #### Requirements:
 ```
