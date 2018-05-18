@@ -29,6 +29,7 @@ sender:
 python==3.6
 tensorflow=1.8.0
 keras==2.1.6
+pprint==0.1
 ```
 
 #### Todo:
