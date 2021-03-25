@@ -11,7 +11,7 @@ numpy==1.14.3
 pip-autoremove==0.9.1
 pprint==0.1
 protobuf==3.5.2.post1
-PyYAML==5.1
+PyYAML==5.4
 scipy==1.1.0
 six==1.11.0
 tensorboard==1.8.0
